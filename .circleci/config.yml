@@ -162,7 +162,6 @@ jobs:
     steps:
       - checkout
       - *attach_workspace
-      - *install_subversion
       - run:
           name: Deploy assets to WordPress plugin directory
           command: .circleci/deploy-assets.sh
@@ -172,7 +171,6 @@ jobs:
     steps:
       - checkout
       - *attach_workspace
-      - *install_subversion
       - run:
           name: Deploy new version to WordPress plugin directory
           command: .circleci/deploy-plugin.sh
