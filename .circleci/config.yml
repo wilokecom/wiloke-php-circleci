@@ -164,7 +164,6 @@ jobs:
       - *attach_workspace
       - run:
           name: Deploy assets to WordPress plugin directory
-          command: .circleci/deploy-assets.sh
 
   deploy_plugin:
     <<: *container_config
@@ -173,7 +172,6 @@ jobs:
       - *attach_workspace
       - run:
           name: Deploy new version to WordPress plugin directory
-          command: .circleci/deploy-plugin.sh
 
 workflows:
   version: 2
