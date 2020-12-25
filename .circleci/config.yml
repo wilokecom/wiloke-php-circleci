@@ -36,11 +36,6 @@ references:
       name: Copy vendor directory
       command: cp -R /tmp/vendor .
 
-  install_subversion: &install_subversion
-    run:
-      name: Install subversion
-      command: sudo apt-get install subversion
-
   # Default configuration for all behat testing jobs
   #
   behat_job: &behat_job
